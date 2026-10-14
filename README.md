@@ -3,3 +3,8 @@
 # starlight-loadscreen
 
 check config :) - html/config.js
+
+   ```cfg
+   ensure starlight-loadscreen
+   setr sv_showBusySpinnerOnLoadingScreen false
+   ```
