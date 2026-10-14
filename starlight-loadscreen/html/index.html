@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#08ddeb" />
+  <title>Loading Experience</title>
+  <link rel="preload" href="assets/vinewood.webp" as="image" type="image/webp" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="config.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <main class="loadscreen" aria-label="FiveM loading screen">
+    <div class="scene" role="img" aria-label="Cyan-tinted Vinewood hillside at sunrise"></div>
+    <div class="scene-glow" aria-hidden="true"></div>
+    <div class="scene-scanlines" aria-hidden="true"></div>
+    <div class="scene-vignette" aria-hidden="true"></div>
+
+    <div id="fps" class="fps" aria-label="Loading screen frame rate">60fps</div>
+
+    <div class="cancel-hint" aria-label="Escape to cancel connection">
+      <kbd>ESC</kbd><span>CANCEL</span>
+    </div>
+
+    <footer class="loading-footer">
+      <div class="footer-details">
+        <div class="footer-left">
+          <span id="loading-title" class="loading-title">LOADING EXPERIENCE</span>
+          <small id="status" class="loading-status" aria-live="polite">Connecting to server…</small>
+        </div>
+        <div class="footer-right">
+          <div id="percent" class="percentage" aria-live="off">0%</div>
+          <div class="footer-meta">
+            <span id="version-label">FiveM loading screen</span>
+            <span id="resource-version">v1.0.0</span>
+          </div>
+        </div>
+      </div>
+      <div id="progress-track" class="progress-track" role="progressbar" aria-label="Loading progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div id="progress-fill" class="progress-fill"></div>
+        <div class="progress-shimmer" aria-hidden="true"></div>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
